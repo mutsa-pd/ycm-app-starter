@@ -1,12 +1,15 @@
 import * as React from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import TFCamera from '../../components/TFCamera'
+import BareScreenHeader from "../../components/BareScreenHeader";
+import Footer from "../../components/Footer";
 
 export default function Translate() {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Translate Page</Text>
+      <BareScreenHeader />
       <TFCamera />
+      <Footer />
     </View>
   );
 }

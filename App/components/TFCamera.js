@@ -13,8 +13,8 @@ const TensorCamera = cameraWithTensors(Camera);
 
 const styles = StyleSheet.create({
   camera: {
-    height: 320,
-    width: 240,
+    height: 400,
+    width: 300,
   },
 });
 
@@ -80,7 +80,7 @@ class TFCamera extends React.Component {
           <TensorCamera
             // Standard Camera props
             style={styles.camera}
-            type={Camera.Constants.Type.back}
+            type={Camera.Constants.Type.front}
             // Tensor related props
             cameraTextureHeight={textureDims.height}
             cameraTextureWidth={textureDims.width}
